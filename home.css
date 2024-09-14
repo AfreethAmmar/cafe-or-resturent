@@ -1,0 +1,196 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(image/photo-1521017432531-fbd92d768814.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+}
+.navebar {
+  width: 85%;
+  margin: auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #0096874f;
+}
+
+.logo {
+  margin-left: 5px;
+}
+
+.navebar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navebar ul li a {
+  text-decoration: none;
+  color: #9ad4cf;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.navebar ul li::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.navebar ul li:hover::after {
+  width: 100%;
+}
+/* menu page*/
+.nav-div ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-div ul li a {
+  text-decoration: none;
+  color: #9ad4cf;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.menu-heading1 {
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.664);
+  color: #ffffff;
+}
+.menu-main-div {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 80%;
+  padding-left: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.menu-main-div img {
+  border-radius: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.774);
+}
+.price {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.button-div {
+  padding-bottom: 80px;
+  justify-content: end;
+  display: flex;
+  align-items: end;
+  padding-right: 50px;
+}
+button {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #000000;
+}
+button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+}
+
+/* pre order*/
+
+.main-form {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+input[type="submit"] {
+  background-color: #2aada0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: end;
+  justify-content: end;
+}
+#form-img {
+  padding-left: 30%;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  border: 1px solid#ccc;
+  background-color: #123d38ef;
+  padding: 20px 40px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#preorder-form h2 {
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* reservation page*/
+
+#reserved-img {
+  padding-left: 20%;
+  padding-top: 165px;
+}
+.form-div {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  padding-right: 50px;
+}
+
+footer {
+  background-color: #ffffffcc;
+  color: #302b63;
+  text-align: center;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

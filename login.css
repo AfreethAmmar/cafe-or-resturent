@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e8f5e9; /* Light green background color */
+  padding-top: 50px; /* Padding to avoid content being hidden behind the navbar */
+}
+
+.navebar {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  justify-content:space-between;
+}
+.userTypeContainer{
+  z-index: 2;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #9ad4cf;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.form_main {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background color for the form */
+  padding: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Rounded corners for the form */
+  margin-top: 70px; /* Adjust this value to create space below the navbar */
+}
+
+
+
+.heading {
+  font-size: 2em;
+  color: #000000; /* Dark green color */
+  font-weight: 700;
+  margin: 5px 0 10px 0;
+  z-index: 2;
+  font-weight: 900;
+}
+
+.inputContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 3px;
+}
+
+.inputField {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #81c784; /* Green border color */
+  margin: 10px 0;
+  color: black;
+  font-size: .8em;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.inputField:focus {
+  outline: none;
+  border-bottom: 2px solid #66bb6a; /* Darker green color on focus */
+}
+
+.inputField::placeholder {
+  color: #388e3c; /* Green placeholder color */
+  font-size: 1em;
+  font-weight: 500;
+}
+
+
+
+.forgotLink {
+  z-index: 2;
+  font-size: .7em;
+  font-weight: 500;
+  color: #2e7d32; /* Dark green color */
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
